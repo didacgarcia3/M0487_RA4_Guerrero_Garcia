@@ -21,7 +21,7 @@ def intro_dades(nom=None):
 def afegir_grup_interface():
     """Afegir un grup mitjançant la funció intro_dades."""
     nom, any_inici, tipus, num_integrants = intro_dades()
-    afegir_grup(nom, any_inici, tipus, num_integrants)  # Afegir grup a la base de dades
+    afegir_grup(nom, any_inici, tipus, num_integrants)  
     sleep(1)
 
 def consultar_grup_interface():
@@ -60,25 +60,23 @@ def actualitzar_grup_interface():
         print(f"Grup actual: {grup}")
         id = grup[0]
 
-        # Actualitzem només els camps si l'usuari els vol modificar
         print("Deixa en blanc el camp que no vols modificar.")
         nom_nou = input(f"Nou nom (actual: {grup[1]}): ")
         if not nom_nou:
-            nom_nou = grup[1]  # Si l'usuari no escriu res, mantindrem el nom antic
+            nom_nou = grup[1]  
         
         any_inici_nou = input(f"Any d'inici (actual: {grup[2]}): ")
         if not any_inici_nou:
-            any_inici_nou = grup[2]  # Si no es canvia, mantenim el valor antic
+            any_inici_nou = grup[2]  
         
         tipus_nou = input(f"Tipus (actual: {grup[3]}): ")
         if not tipus_nou:
-            tipus_nou = grup[3]  # Si no es canvia, mantenim el valor antic
+            tipus_nou = grup[3] 
         
         num_integrants_nou = input(f"Nombre d'integrants (actual: {grup[4]}): ")
         if not num_integrants_nou:
-            num_integrants_nou = grup[4]  # Si no es canvia, mantenim el valor antic
+            num_integrants_nou = grup[4]  
 
-        # Actualitzem el grup a la base de dades
         actualitzar_grup(id, nom_nou, any_inici_nou, tipus_nou, num_integrants_nou)
         sleep(1)
     else:
@@ -128,5 +126,5 @@ def mostrar_menu():
             sleep(1)
 
 if __name__ == "__main__":
-    crear_taula()  # Ens assegurem que la taula existeix
-    mostrar_menu()  # Inicia el menú interactiu
+    crear_taula()  
+    mostrar_menu()  
