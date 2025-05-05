@@ -1,3 +1,5 @@
+# Gestor de Grups Musicals
+
 ## DESCRIPCIÓ DEL PROJECTE
 
 Aquest projecte consisteix en el desenvolupament d’una aplicació en Python per gestionar grups musicals,
@@ -5,6 +7,24 @@ com a part del mòdul *Entorns de Desenvolupament* (M0487) del cicle formatiu de
 
 L’objectiu és consolidar bones pràctiques de programació, com la reutilització de funcions, 
 la documentació clara amb docstrings, la creació de tests automatitzats i l’ús col·laboratiu de Git i GitHub.
+
+# Objectius del projecte
+
+- Refactoritzar i millorar codi existent
+- Documentar correctament el projecte (README)
+- Treballar en equip amb control de versions (Git, GitHub)
+- Aplicar testing amb el mòdul "unittest"
+- Registrar l’evolució del projecte amb "HISTÒRIC.md"
+
+## 🗂️ Estructura del projecte
+
+M0487_RA4_Guerrero_Garcia/
+│
+├── db.py # Funcions per a la gestió de la base de dades
+├── gestor_grups_musicals.py # Interfície principal amb el menú i interacció amb l'usuari
+├── README.md # Descripció del projecte
+├── HISTÒRIC.md # Registre de canvis i contribucions
+└── test_funcions.py # Tests unitaris amb unittest
 
 # Funcionalitats principals
 
@@ -15,14 +35,6 @@ la documentació clara amb docstrings, la creació de tests automatitzats i l’
 - Eliminar un grup
 - Validació de dades
 - Ús de SQLite per emmagatzemar la informació
-
-# Objectius del projecte
-
-- Refactoritzar i millorar codi existent
-- Documentar correctament el projecte (README)
-- Treballar en equip amb control de versions (Git, GitHub)
-- Aplicar testing amb el mòdul "unittest"
-- Registrar l’evolució del projecte amb "HISTÒRIC.md"
 
 # Tecnologies i eines utilitzades
 
@@ -68,6 +80,7 @@ Conté totes les operacions relacionades amb la base de dades:
     eliminar_grup_interface() – Permet eliminar un grup pel nom.
 
     mostrar_menu() – Menú interactiu amb l’usuari que crida les funcions anteriors.
+
 
 
 ## CRÈDITS I AUTORIA
